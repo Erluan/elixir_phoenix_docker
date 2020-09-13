@@ -19,7 +19,7 @@ mix phx.new . --app hello --database mysql
 ```
 If you want to create a RESTFUL API Service, use the following command:
 ```bash
-mix phx.new . hello_api --no-brunch --no-html --database mysql
+mix phx.new . hello_api --no-webpack --no-html --database mysql
 ```
 
 Note that '--database mysql' was used in the commands above, because the default database setup in Elixir Phoenix is for PostgreSQL, and MySQL was chosen here for testing purposes, but make yourself confortable on going with with MySQL if your database is already MySQL or want to use it in your Stack.
