@@ -27,6 +27,13 @@ Note that '--database mysql' was used in the commands above, because the default
 ### Setting up the Database Configuration
 Change the database hostname configuration on file 'src/config/dev.exs' and set your Database Configuration, accoding to the DB set in your 'environment' in 'docker-compose'
 
+**Note:**
+Using MySQL, you need to import an Ecto Adapter to connect to the Database with your 'environment' setup:
+```bash
+config :hello, Hello.Repo,
+  adapter: Ecto.Adapters.MySQL,
+```
+
 Then, you can initialize the database with Ecto:
 ```bash
 cd src
