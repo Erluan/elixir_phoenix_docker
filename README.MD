@@ -23,6 +23,9 @@ mix phx.new . hello_api --no-webpack --no-html --database mysql
 ```
 Note that '--database mysql' was used in the commands above, because the default database setup in Elixir Phoenix is for PostgreSQL, and MySQL was chosen here for testing purposes, but make yourself confortable on going with with MySQL if your database is already MySQL or want to use it in your Stack.
 
+**Note:**
+If necessary, change 'src' folder permission to write and edit the App Files
+
 ### Setting up the Database Configuration
 Change the database hostname configuration on file 'src/config/dev.exs' and set your Database Configuration, accoding to the DB set in your 'environment' in 'docker-compose'
 
